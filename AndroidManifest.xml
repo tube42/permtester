@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
   package="se.tube42.permtester.Main"
-  android:versionCode="2"
-  android:versionName="2">
+  android:versionCode="4"
+  android:versionName="4">
   <application android:label="@string/app_name" android:icon="@drawable/ic_launcher">
     <activity android:name="TestActivity"
       android:theme="@style/Theme.Simple"          
@@ -23,41 +23,35 @@
   <!-- Device & app history -->
   
   <uses-permission android:name="android.permission.GET_TOP_ACTIVITY_INFO" />  
+  <uses-permission android:name="android.permission.READ_HISTORY_BOOKMARKS" />      
   <!--
-      <uses-permission android:name="android.permission.READ_HISTORY_BOOKMARKS" />      
       <uses-permission android:name="android.permission.READ_LOGS" />
-      <uses-permission android:name="android.permission.READ_PHONE_STATE" />      
-  -->
+      -->
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />      
+  
   <!-- Identity -->      
   <uses-permission android:name="android.permission.GET_ACCOUNTS" />      
   <!--
-      <uses-permission android:name="android.permission.READ_CONTACTS" />
-      <uses-permission android:name="android.permission.WRITE_CONTACTS" />
-      <uses-permission android:name="android.permission.ACCOUNT_MANAGER" />      
-      -->
-  
-  <!-- Contacts/Calendar -->      
+  <uses-permission android:name="android.permission.READ_CONTACTS" />
+  <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+  <uses-permission android:name="android.permission.ACCOUNT_MANAGER" />      
+  -->
+  <!-- Contacts/Calendar -->        
   <!--
-  
   <uses-permission android:name="android.permission.WRITE_CALENDAR" />      
-      <uses-permission android:name="android.permission.READ_CALENDAR" />      
-      -->
-  
+  <uses-permission android:name="android.permission.READ_CALENDAR" />      
+  -->
   <!-- Location -->            
-  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />      
-  <!--
-      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-      <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />      
-      -->
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />        
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />      
   
   <!-- SMS -->
   <uses-permission android:name="android.permission.READ_SMS" />
-  <!--
-      <uses-permission android:name="android.permission.RECEIVE_MMS" />      
-      <uses-permission android:name="android.permission.RECEIVE_SMS" />      
-      <uses-permission android:name="android.permission.SEND_SMS" />      
-      <uses-permission android:name="android.permission.WRITE_SMS" />      
-      -->
+  <uses-permission android:name="android.permission.RECEIVE_MMS" />      
+  <uses-permission android:name="android.permission.RECEIVE_SMS" />      
+  <uses-permission android:name="android.permission.SEND_SMS" />      
+  <uses-permission android:name="android.permission.WRITE_SMS" />      
   
   <!-- phone -->
   <uses-permission android:name="android.permission.WRITE_CALL_LOG" />      
@@ -70,11 +64,9 @@
   
   <!-- Photos/Media/Files -->
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />      
-  <!--
-      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />      
-      <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />      
-      <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />    
-      -->
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />      
+  <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS" />      
+  <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />    
   
   <!-- Camera/Microphone -->
     <!--
@@ -85,9 +77,13 @@
   
   <!-- others -->
   <uses-permission android:name="android.permission.SUBSCRIBED_FEEDS_WRITE" />            
+  <uses-permission android:name="android.permission.SUBSCRIBED_FEEDS_READ" />      
   <!--
-      <uses-permission android:name="android.permission.SUBSCRIBED_FEEDS_READ" />      
-      <uses-permission android:name="android.permission.WRITE_SOCIAL_STREAM" />      
-      <uses-permission android:name="android.permission.READ_SOCIAL_STREAM" />      
-      -->      
+  <uses-permission android:name="android.permission.WRITE_SOCIAL_STREAM" />      
+  <uses-permission android:name="android.permission.READ_SOCIAL_STREAM" />      
+  -->
+  
+  <!-- new ones -->
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
 </manifest>

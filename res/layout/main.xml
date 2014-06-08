@@ -8,9 +8,9 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:gravity="center"
-    android:textColor="#00FF00"
+    android:textColor="#FF2020"
     android:typeface="monospace"    
-    android:text="Hi there! I am the nice app!"
+    android:text="No more Mr. nice guy!!\n\n(I am the evil app)"
     />
 </LinearLayout>
 
